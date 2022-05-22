@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex; 
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+}
+.fondo{
+  width: 99%;
+	height: 99%;
+	position: relavite;
+  padding: 1%;
+}
+.boton{
+  width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 280px;
+	left: 30px;
+}
+.boton1{
+  width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 280px;
+	left: 1230px;
+}
+.close{
+  width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 15px;
+	left: 1250px;
+}
+  
+  @media all and (min-width: 300px) {
+    .aside { flex: 0 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
